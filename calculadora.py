@@ -10,7 +10,7 @@ sair = False
 while sair == False:
 	num1 = input("Digite o primeiro número: ")
 	num1 = int(num1)
-	print("'+' para Soma\n'-' para Subtração\n'*' para Multiplicação\n'/' para Divisão")#\n'**' para Exponenciação")
+	print("'+' para Soma\n'-' para Subtração\n'*' para Multiplicação\n'/' para Divisão\n'^' para Exponenciação")
 	oprd = input("Digite o operador: ")
 	num2 = input("Digite o segundo número: ")
 	num2 = int(num2)
@@ -23,8 +23,8 @@ while sair == False:
 		operacao = num1 * num2
 	elif oprd == "/": #divisão
 		operacao = num1 / num2
-	#elif oprd == "**": #exponenciação
-		#operacao = num1 ** num2
+	elif oprd == "^": #exponenciação
+		operacao = num1 ** num2
 
 	print("Resultado: ")
 	print(operacao)
